@@ -28,7 +28,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  padding: 25px;
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -129,11 +129,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 23px var(--padding-16xl) 44px;
+  padding: 25px;
   box-sizing: border-box;
   gap: var(--gap-7xl);
   line-height: normal;
   letter-spacing: normal;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 40%;
 }
