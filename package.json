@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel ./*.html ",
-    "build": "parcel build ./*.html  --dist-dir ./build"
+    "start": "rm -rf .parcel-cache && parcel ./*.html",
+    "build": "rm -rf .parcel-cache && parcel build ./*.html --dist-dir ./build"
   },
   "author": "",
   "license": "ISC",

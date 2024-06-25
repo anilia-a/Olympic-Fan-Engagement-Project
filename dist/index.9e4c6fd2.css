@@ -7,7 +7,7 @@
   right: 90px;
 }
 
-.ireland-paris, .leader-board {
+.ireland-paris, .watch-live {
   white-space: nowrap;
   position: relative;
 }
@@ -21,7 +21,7 @@
   line-height: 150%;
 }
 
-.leader-board {
+.watch-live {
   color: inherit;
   min-width: 128px;
   font-weight: 500;
@@ -30,7 +30,7 @@
   display: inline-block;
 }
 
-.leader-board-wrapper {
+.watch-live-wrapper {
   padding: var(--padding-xs) 0 0;
   flex-direction: column;
   justify-content: flex-start;
@@ -248,7 +248,7 @@
   width: 1942.2px;
 }
 
-.team-ireland-update-box {
+.official-tweets-box {
   background: linear-gradient(90deg, #86bc25, #fff);
   width: 923px;
   max-width: 100%;
@@ -607,7 +607,7 @@
   padding: 146px 0 0;
 }
 
-.ireland-tweet-list, .team-ireland-update {
+.ireland-tweet-list, .official-tweets {
   justify-content: flex-start;
   align-items: flex-start;
   max-width: 100%;
@@ -621,7 +621,7 @@
   width: 850px;
 }
 
-.team-ireland-update {
+.official-tweets {
   padding: var(--padding-15xl) var(--padding-mid) 81.9px var(--padding-2xl);
   box-sizing: border-box;
   background: linear-gradient(90deg, #86bc25, #fff);
@@ -998,7 +998,7 @@
   align-self: stretch;
 }
 
-.ireland-tweets {
+.tweets {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -1029,34 +1029,21 @@
 }
 
 .medal-board-title {
-  font-size: inherit;
   flex: 1;
   margin: 0;
   font-family: inherit;
-  font-weight: 800;
-  line-height: 29px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 40px;
   position: relative;
 }
 
-.main-content, .medal-title-container {
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 100%;
-  display: flex;
-}
-
-.medal-title-container {
-  box-sizing: border-box;
-  flex-direction: row;
-  width: 416px;
-  padding: 0 75px;
-}
-
-.main-content {
+.countdown-content {
   flex-direction: column;
-  align-self: stretch;
+  align-items: center;
   gap: 25px;
-  height: 212px;
+  height: 200px;
+  display: flex;
 }
 
 .medal-counts, .medal-counts1 {
@@ -1092,7 +1079,7 @@
 }
 
 .mask-group-icon {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -1107,8 +1094,8 @@
 
 .medal-separator {
   z-index: 1;
-  font-weight: 800;
-  line-height: 30.3px;
+  font-weight: 500;
+  line-height: 20px;
   position: relative;
 }
 
@@ -1124,7 +1111,7 @@
 }
 
 .mask-group-icon1 {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -1138,8 +1125,8 @@
 .gold-count {
   z-index: 1;
   min-width: 29px;
-  font-weight: 800;
-  line-height: 30.3px;
+  font-weight: 500;
+  line-height: 20px;
   display: inline-block;
   position: relative;
 }
@@ -1164,21 +1151,20 @@
 }
 
 .mask-group-icon2 {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   max-width: 100%;
   height: 100%;
   max-height: 100%;
+  margin: -15px;
   position: absolute;
   inset: 0;
-  overflow: hidden;
-  margin: 0 !important;
 }
 
 .div4 {
   z-index: 1;
   min-width: 27px;
-  font-weight: 800;
+  font-weight: 0;
   line-height: 30.3px;
   display: inline-block;
   position: relative;
@@ -1211,7 +1197,7 @@
   position: relative;
 }
 
-.main-content-parent, .medals-container, .medals-container1 {
+.main-content, .medals-container, .medals-container1 {
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
@@ -1223,26 +1209,26 @@
   flex-direction: row;
   width: 416px;
   max-width: 100%;
+  height: 100px;
 }
 
-.main-content-parent {
+.main-content {
   flex-direction: column;
   flex-shrink: 0;
-  gap: 58px;
+  gap: 30px;
   width: 437px;
   max-width: calc(100% - 746px);
 }
 
 .medal-board-title1 {
-  font-size: inherit;
+  font-size: x;
   z-index: 3;
   flex-shrink: 0;
-  width: 266px;
+  width: 100px;
   margin: 0;
-  font-family: inherit;
   font-style: italic;
   font-weight: 600;
-  line-height: 29px;
+  line-height: 30px;
   display: inline-block;
   position: relative;
 }
@@ -2409,12 +2395,10 @@
   flex-direction: row;
 }
 
-.image-2-map {
-  object-fit: cover;
-  width: 930px;
+.map-image {
+  object-fit: fit;
   max-width: 100%;
-  max-height: 100%;
-  position: relative;
+  height: auto;
 }
 
 .official-merchandise-box {
@@ -2532,7 +2516,7 @@
   display: flex;
 }
 
-.apple, .apple-macbook-air, .wrapper-item-image {
+.apple, .item-description, .wrapper-item-image {
   align-self: stretch;
   position: relative;
 }
@@ -2542,11 +2526,11 @@
   line-height: 100%;
 }
 
-.apple-macbook-air {
+.item-description {
   font-size: var(--label-l100-b-size);
   color: var(--carbon-500);
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex-shrink: 0;
   height: 41px;
   line-height: 130%;
@@ -2592,32 +2576,16 @@
   position: relative;
 }
 
-.price-container, .tag {
-  flex-direction: row;
+.price-container {
   justify-content: flex-start;
+  align-self: stretch;
   align-items: flex-start;
+  gap: var(--gap-3xs);
+  flex-direction: row;
   display: flex;
 }
 
-.tag {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-  width: 63px;
-  height: 24px;
-}
-
-.price-container {
-  align-self: stretch;
-  gap: var(--gap-3xs);
-}
-
-.sale-background {
+.line-separator {
   background-color: var(--carbon-200);
   align-self: stretch;
   height: 1px;
@@ -2754,9 +2722,9 @@
 }
 
 .item-info {
-  gap: var(--gap-5xl);
   font-size: var(--heading-h100-size);
   color: var(--carbon-800);
+  gap: 30px;
 }
 
 .gallery-items {
@@ -2847,29 +2815,6 @@
   display: flex;
 }
 
-.apple-macbook-air1, .apple1, .wrapper-item-image1 {
-  align-self: stretch;
-  position: relative;
-}
-
-.apple1 {
-  letter-spacing: .03em;
-  line-height: 100%;
-}
-
-.apple-macbook-air1 {
-  font-size: var(--label-l100-b-size);
-  color: var(--carbon-500);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-shrink: 0;
-  height: 41px;
-  line-height: 130%;
-  text-decoration: underline;
-  display: inline-block;
-  overflow: hidden;
-}
-
 .item-title1 {
   justify-content: flex-start;
   align-self: stretch;
@@ -2897,46 +2842,13 @@
   display: flex;
 }
 
-.off1 {
-  text-transform: capitalize;
-  align-self: stretch;
-  width: 47px;
-  font-weight: 500;
-  line-height: 100%;
-  display: inline-block;
-  position: relative;
-}
-
-.price-container1, .tag1 {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  display: flex;
-}
-
-.tag1 {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-  width: 63px;
-  height: 24px;
-}
-
 .price-container1 {
+  justify-content: flex-start;
   align-self: stretch;
+  align-items: flex-start;
   gap: var(--gap-4xs);
-}
-
-.sale-background1 {
-  background-color: var(--carbon-200);
-  align-self: stretch;
-  height: 1px;
-  position: relative;
+  flex-direction: row;
+  display: flex;
 }
 
 .iconshipping1 {
@@ -3058,9 +2970,9 @@
 }
 
 .item-info1 {
-  gap: var(--gap-5xl);
   font-size: var(--heading-h100-size);
   color: var(--carbon-800);
+  gap: 30px 20px;
 }
 
 .gallery-items1 {
@@ -3082,8 +2994,8 @@
   object-fit: contain;
   width: 18px;
   height: 18px;
-  top: 156px;
-  left: 25px;
+  top: 317px;
+  left: 20px;
 }
 
 .new-arrival {
@@ -3093,8 +3005,8 @@
   min-width: 71px;
   line-height: 100%;
   display: inline-block;
-  top: 159px;
-  left: 47px;
+  top: 320px;
+  left: 40px;
 }
 
 .gallery-container, .gallery-item {
@@ -3211,7 +3123,7 @@
 .paris-2024-olympics {
   color: inherit;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex: 1;
   height: 41px;
   line-height: 130%;
@@ -3270,31 +3182,15 @@
   position: relative;
 }
 
-.button-content, .tag2 {
-  flex-direction: row;
+.button-content {
   justify-content: flex-start;
   align-items: flex-start;
-  display: flex;
-}
-
-.tag2 {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-  flex: 1;
-  height: 24px;
-}
-
-.button-content {
   gap: var(--gap-3xs);
   font-size: var(--label-l100-b-size);
   color: var(--carbon-800);
+  flex-direction: row;
   width: 142px;
+  display: flex;
 }
 
 .button-icon {
@@ -3492,7 +3388,7 @@
   font-size: var(--label-l100-b-size);
   color: var(--carbon-500);
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex-shrink: 0;
   height: 41px;
   line-height: 130%;
@@ -3551,38 +3447,15 @@
   position: relative;
 }
 
-.shipping-label-parent, .tag3 {
-  flex-direction: row;
+.shipping-label-parent {
   justify-content: flex-start;
   align-items: flex-start;
-  display: flex;
-}
-
-.tag3 {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-  flex: 1;
-  height: 24px;
-}
-
-.shipping-label-parent {
   gap: var(--gap-4xs);
   font-size: var(--label-l100-b-size);
   color: var(--carbon-800);
+  flex-direction: row;
   width: 133px;
-}
-
-.sale-background2 {
-  background-color: var(--carbon-200);
-  align-self: stretch;
-  height: 1px;
-  position: relative;
+  display: flex;
 }
 
 .iconshipping4 {
@@ -3692,8 +3565,8 @@
 
 .content-column {
   align-self: stretch;
-  gap: var(--gap-8xl);
-  height: 891px;
+  gap: 27px;
+  height: 847px;
 }
 
 .merchandise-title {
@@ -3799,14 +3672,14 @@
 .paris-2024-olympics2 {
   color: inherit;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex: 1;
   height: 41px;
   line-height: 130%;
   text-decoration: underline;
   display: inline-block;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .backpack-price-shipping {
@@ -3858,31 +3731,15 @@
   position: relative;
 }
 
-.mascot-button-price, .tag4 {
-  flex-direction: row;
+.mascot-button-price {
   justify-content: flex-start;
   align-items: flex-start;
-  display: flex;
-}
-
-.tag4 {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-  flex: 1;
-  height: 24px;
-}
-
-.mascot-button-price {
   gap: var(--gap-3xs);
   font-size: var(--label-l100-b-size);
   color: var(--carbon-800);
+  flex-direction: row;
   width: 134px;
+  display: flex;
 }
 
 .mascot-button-background {
@@ -3992,7 +3849,7 @@
   flex-direction: column;
   flex-shrink: 0;
   justify-content: flex-start;
-  height: 432px;
+  height: 415px;
   overflow: hidden;
 }
 
@@ -4082,13 +3939,13 @@
   font-size: var(--label-l100-b-size);
   color: var(--carbon-500);
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex-shrink: 0;
   height: 41px;
   line-height: 130%;
   text-decoration: underline;
   display: inline-block;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .backpack-parent {
@@ -4133,41 +3990,15 @@
   display: flex;
 }
 
-.off5 {
-  text-transform: capitalize;
-  align-self: stretch;
-  width: 47px;
-  font-weight: 500;
-  line-height: 100%;
-  display: inline-block;
-  position: relative;
-}
-
-.frame-parent1, .tag5 {
-  flex-direction: row;
+.frame-parent1 {
   justify-content: flex-start;
   align-items: flex-start;
-  display: flex;
-}
-
-.tag5 {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-  flex: 1;
-  height: 24px;
-}
-
-.frame-parent1 {
   gap: var(--gap-3xs);
   font-size: var(--label-l100-b-size);
   color: var(--carbon-800);
+  flex-direction: row;
   width: 133px;
+  display: flex;
 }
 
 .mascot-discount-background {
@@ -4277,7 +4108,7 @@
   flex-direction: column;
   flex-shrink: 0;
   justify-content: flex-start;
-  height: 432px;
+  height: 410px;
   overflow: hidden;
 }
 
@@ -4317,7 +4148,7 @@
   gap: 65px;
 }
 
-.frame-wrapper, .image-2-map-parent, .official-merchandise-box-parent {
+.frame-wrapper, .official-merchandise-box-parent {
   align-items: flex-start;
   max-width: 100%;
   display: flex;
@@ -4332,11 +4163,8 @@
   padding: 92px 0 0;
 }
 
-.image-2-map-parent {
-  justify-content: center;
-  align-self: stretch;
-  gap: var(--gap-19xl);
-  flex-direction: row;
+.map-parent {
+  margin-left: 20px;
 }
 
 .ireland-update-parent {
@@ -4505,30 +4333,22 @@
 }
 
 @media screen and (width <= 1875px) {
-  .ireland-tweets {
+  .tweets {
     flex: 1;
   }
 
   .ireland-update {
     flex-wrap: wrap;
   }
-
-  .image-2-map {
-    flex: 1;
-  }
-
-  .image-2-map-parent {
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (width <= 1400px) {
-  .ireland-tweets {
+  .tweets {
     flex: 1;
     min-width: 100%;
   }
 
-  .main-content-parent {
+  .main-content {
     max-width: 100%;
   }
 
@@ -4540,15 +4360,7 @@
     min-width: 100%;
   }
 
-  .ireland-update {
-    flex-wrap: wrap;
-  }
-
-  .image-2-map {
-    flex: 1;
-  }
-
-  .merchandise-gallery {
+  .ireland-update, .merchandise-gallery {
     flex-wrap: wrap;
   }
 
@@ -4563,10 +4375,6 @@
     box-sizing: border-box;
     min-width: 100%;
     padding-top: 60px;
-  }
-
-  .image-2-map-parent {
-    flex-wrap: wrap;
   }
 
   .content-container-wrapper {
@@ -4618,7 +4426,7 @@
     flex-wrap: wrap;
   }
 
-  .team-ireland-update {
+  .official-tweets {
     box-sizing: border-box;
     padding-top: 22px;
     padding-bottom: 53px;
@@ -4643,16 +4451,16 @@
     flex-wrap: wrap;
   }
 
-  .ireland-tweets {
+  .tweets {
     flex: 1;
   }
 
   .div4, .gold-count, .medal-board-title, .medal-separator {
     font-size: var(--font-size-13xl);
-    line-height: 35px;
+    line-height: 20px;
   }
 
-  .main-content-parent {
+  .main-content {
     display: none;
   }
 
@@ -4675,10 +4483,6 @@
     flex-wrap: wrap;
   }
 
-  .image-2-map {
-    flex: 1;
-  }
-
   .official-merchandise-title {
     font-size: var(--font-size-13xl);
     line-height: 35px;
@@ -4697,11 +4501,6 @@
   .frame-wrapper {
     box-sizing: border-box;
     padding-top: 39px;
-  }
-
-  .image-2-map-parent {
-    gap: var(--gap-lgi);
-    flex-wrap: wrap;
   }
 
   .content-container {
@@ -4755,7 +4554,7 @@
     gap: var(--gap-7xl);
   }
 
-  .team-ireland-update {
+  .official-tweets {
     gap: var(--gap-2xl);
   }
 
@@ -4798,7 +4597,7 @@
     box-sizing: border-box;
   }
 
-  .ireland-tweets {
+  .tweets {
     gap: var(--gap-xl);
     flex: 1;
   }
@@ -4816,14 +4615,14 @@
 
   .div4, .gold-count, .medal-separator {
     font-size: var(--subheading-size);
-    line-height: 26px;
+    line-height: 20px;
   }
 
   .medals {
     flex-wrap: wrap;
   }
 
-  .main-content-parent {
+  .main-content {
     gap: var(--gap-10xl);
   }
 
@@ -4843,10 +4642,6 @@
 
   .ireland-update {
     flex-wrap: wrap;
-  }
-
-  .image-2-map {
-    flex: 1;
   }
 
   .official-merchandise-title {
@@ -4875,10 +4670,6 @@
   .backpack, .collectable, .jewellery, .team-france-hoodie {
     font-size: var(--label-l100-b-size);
     line-height: 16px;
-  }
-
-  .image-2-map-parent {
-    flex-wrap: wrap;
   }
 
   .copyright-2024-all, .olympics-fan-zone {
@@ -5042,5 +4833,62 @@
   display: flex;
   position: relative;
   overflow: hidden;
+}
+
+.countdown-wrapper {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.countdown {
+  color: #333;
+  font-size: 20px;
+}
+
+.countdown span {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.slideshow-container {
+  max-width: 1080px;
+  max-height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  z-index: 1;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00000080;
+  padding: 10px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

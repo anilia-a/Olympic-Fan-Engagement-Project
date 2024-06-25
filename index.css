@@ -7,7 +7,7 @@
   z-index: 1;
 }
 .ireland-paris,
-.leader-board {
+.watch-live{
   position: relative;
   white-space: nowrap;
 }
@@ -19,7 +19,7 @@
   font-weight: 700;
   font-family: inherit;
 }
-.leader-board {
+.watch-live {
   text-decoration: none;
   line-height: 20px;
   font-weight: 500;
@@ -27,7 +27,7 @@
   display: inline-block;
   min-width: 128px;
 }
-.leader-board-wrapper {
+.watch-live-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -227,7 +227,7 @@
   justify-content: center;
   padding: 0 var(--padding-xl);
 }
-.team-ireland-update-box {
+.official-tweets-box {
   width: 923px;
   height: 531.9px;
   position: relative;
@@ -559,7 +559,7 @@
   font-size: var(--font-size-11xl);
 }
 .ireland-tweet-list,
-.team-ireland-update {
+.official-tweets {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -571,7 +571,7 @@
   gap: 52px;
   font-size: var(--body-styles-body-01-size);
 }
-.team-ireland-update {
+.official-tweets {
   align-self: stretch;
   background: linear-gradient(90deg, #86bc25, #fff);
   flex-direction: column;
@@ -590,6 +590,7 @@
   background: linear-gradient(90deg, #86bc25, #fff);
   display: none;
 }
+
 .fan-updates1 {
   margin: 0;
   flex: 1;
@@ -920,7 +921,7 @@
   justify-content: flex-end;
   padding: 0 var(--padding-12xs) 0 0;
 }
-.ireland-tweets {
+.tweets {
   width: 930px;
   display: flex;
   flex-direction: column;
@@ -951,27 +952,16 @@
   margin: 0;
   flex: 1;
   position: relative;
-  font-size: inherit;
-  line-height: 29px;
-  font-weight: 800;
+  font-size: 25px;
+  line-height:40px;
+  font-weight: 600;
   font-family: inherit;
 }
-.main-content,
-.medal-title-container {
+
+.countdown-content {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.medal-title-container {
-  width: 416px;
-  flex-direction: row;
-  padding: 0 75px;
-  box-sizing: border-box;
-}
-.main-content {
-  align-self: stretch;
-  height: 212px;
+  align-items: center;
+  height: 200px;
   flex-direction: column;
   gap: 25px;
 }
@@ -1015,15 +1005,15 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .p {
   margin: 0;
 }
 .medal-separator {
   position: relative;
-  line-height: 30.3px;
-  font-weight: 800;
+  line-height: 20px;
+  font-weight: 500;
   z-index: 1;
 }
 .bronze-medal {
@@ -1048,12 +1038,12 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .gold-count {
   position: relative;
-  line-height: 30.3px;
-  font-weight: 800;
+  line-height: 20px;
+  font-weight: 500;
   display: inline-block;
   min-width: 29px;
   z-index: 1;
@@ -1080,20 +1070,19 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  margin: 0 !important;
+  margin: -15px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   max-width: 100%;
-  overflow: hidden;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .div4 {
   position: relative;
   line-height: 30.3px;
-  font-weight: 800;
+  font-weight: 00;
   display: inline-block;
   min-width: 27px;
   z-index: 1;
@@ -1122,7 +1111,7 @@
 .medals-container1 {
   position: relative;
 }
-.main-content-parent,
+.main-content,
 .medals-container,
 .medals-container1 {
   display: flex;
@@ -1131,28 +1120,28 @@
 }
 .medals-container {
   width: 416px;
+  height: 100px;
   flex-direction: row;
   padding: 0 var(--padding-mini);
   box-sizing: border-box;
   max-width: 100%;
 }
-.main-content-parent {
+.main-content {
   width: 437px;
   flex-direction: column;
-  gap: 58px;
+  gap: 30px;
   max-width: calc(100% - 746px);
   flex-shrink: 0;
 }
 .medal-board-title1 {
   margin: 0;
-  width: 266px;
+  font-size: x;
+  width: 100px;
   position: relative;
-  font-size: inherit;
-  line-height: 29px;
+  line-height: 30px;
   display: inline-block;
   font-style: italic;
   font-weight: 600;
-  font-family: inherit;
   flex-shrink: 0;
   z-index: 3;
 }
@@ -2244,11 +2233,9 @@
   justify-content: center;
   gap: var(--gap-19xl);
 }
-.image-2-map {
-  width: 930px;
-  position: relative;
-  max-height: 100%;
-  object-fit: cover;
+.map-image {
+  height:auto;
+  object-fit: fit;
   max-width: 100%;
 }
 .official-merchandise-box {
@@ -2359,7 +2346,7 @@
   justify-content: center;
 }
 .apple,
-.apple-macbook-air,
+.item-description,
 .wrapper-item-image {
   align-self: stretch;
   position: relative;
@@ -2368,7 +2355,7 @@
   letter-spacing: 0.03em;
   line-height: 100%;
 }
-.apple-macbook-air {
+.item-description {
   height: 41px;
   font-size: var(--label-l100-b-size);
   text-decoration: underline;
@@ -2377,7 +2364,7 @@
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex-shrink: 0;
 }
 .item-title {
@@ -2413,30 +2400,18 @@
   font-weight: 500;
   display: inline-block;
 }
-.price-container,
-.tag {
+.price-container{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag {
-  height: 24px;
-  width: 63px;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-}
+
 .price-container {
   align-self: stretch;
   gap: var(--gap-3xs);
 }
-.sale-background {
+.line-separator {
   align-self: stretch;
   height: 1px;
   position: relative;
@@ -2565,7 +2540,7 @@
   justify-content: flex-start;
 }
 .item-info {
-  gap: var(--gap-5xl);
+  gap: 30px 30px;
   font-size: var(--heading-h100-size);
   color: var(--carbon-800);
 }
@@ -2649,28 +2624,7 @@
   align-items: center;
   justify-content: center;
 }
-.apple-macbook-air1,
-.apple1,
-.wrapper-item-image1 {
-  align-self: stretch;
-  position: relative;
-}
-.apple1 {
-  letter-spacing: 0.03em;
-  line-height: 100%;
-}
-.apple-macbook-air1 {
-  height: 41px;
-  font-size: var(--label-l100-b-size);
-  text-decoration: underline;
-  line-height: 130%;
-  color: var(--carbon-500);
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
+
 .item-title1 {
   align-self: stretch;
   display: flex;
@@ -2695,43 +2649,15 @@
   justify-content: flex-start;
   padding: var(--padding-9xs) 0 0;
 }
-.off1 {
-  align-self: stretch;
-  width: 47px;
-  position: relative;
-  line-height: 100%;
-  text-transform: capitalize;
-  font-weight: 500;
-  display: inline-block;
-}
-.price-container1,
-.tag1 {
+.price-container1{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag1 {
-  height: 24px;
-  width: 63px;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-}
 .price-container1 {
   align-self: stretch;
   gap: var(--gap-4xs);
-}
-.sale-background1 {
-  align-self: stretch;
-  height: 1px;
-  position: relative;
-  background-color: var(--carbon-200);
 }
 .iconshipping1 {
   height: 18px;
@@ -2842,7 +2768,7 @@
   justify-content: flex-start;
 }
 .item-info1 {
-  gap: var(--gap-5xl);
+  gap: 30px 20px;
   font-size: var(--heading-h100-size);
   color: var(--carbon-800);
 }
@@ -2863,13 +2789,13 @@
 .iconshipping2 {
   width: 18px;
   height: 18px;
-  top: 156px;
-  left: 25px;
+  top: 317px;
+  left: 20px;
   object-fit: contain;
 }
 .new-arrival {
-  top: 159px;
-  left: 47px;
+  top: 320px;
+  left: 40px;
   font-size: var(--caption-c100-l-size);
   letter-spacing: 0.04em;
   line-height: 100%;
@@ -2987,7 +2913,7 @@
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 .paris-2024-olympics-le-coq-spo-wrapper {
   align-self: stretch;
@@ -3033,24 +2959,11 @@
   font-weight: 500;
   display: inline-block;
 }
-.button-content,
-.tag2 {
+.button-content{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.tag2 {
-  height: 24px;
-  flex: 1;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
 }
 .button-content {
   width: 142px;
@@ -3240,7 +3153,7 @@
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex-shrink: 0;
 }
 .jewellery-parent {
@@ -3288,37 +3201,20 @@
   font-weight: 500;
   display: inline-block;
 }
-.shipping-label-parent,
-.tag3 {
+.shipping-label-parent{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag3 {
-  height: 24px;
-  flex: 1;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-}
+
 .shipping-label-parent {
   width: 133px;
   gap: var(--gap-4xs);
   font-size: var(--label-l100-b-size);
   color: var(--carbon-800);
 }
-.sale-background2 {
-  align-self: stretch;
-  height: 1px;
-  position: relative;
-  background-color: var(--carbon-200);
-}
+
 .iconshipping4 {
   height: 18px;
   width: 18px;
@@ -3417,8 +3313,8 @@
 }
 .content-column {
   align-self: stretch;
-  height: 891px;
-  gap: var(--gap-8xl);
+  height: 847px;
+  gap: 27px;
 }
 .merchandise-title {
   flex: 1;
@@ -3518,9 +3414,9 @@
   line-height: 130%;
   color: inherit;
   display: inline-block;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 .backpack-price-shipping {
   align-self: stretch;
@@ -3566,25 +3462,13 @@
   font-weight: 500;
   display: inline-block;
 }
-.mascot-button-price,
-.tag4 {
+.mascot-button-price{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag4 {
-  height: 24px;
-  flex: 1;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-}
+
 .mascot-button-price {
   width: 134px;
   gap: var(--gap-3xs);
@@ -3679,7 +3563,7 @@
   white-space: nowrap;
 }
 .gallery-items4 {
-  height: 432px;
+  height: 415px;
   border-radius: var(--br-5xl);
   background-color: var(--white);
   border: 1px solid var(--carbon-200);
@@ -3773,9 +3657,9 @@
   line-height: 130%;
   color: var(--carbon-500);
   display: inline-block;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   flex-shrink: 0;
 }
 .backpack-parent {
@@ -3816,34 +3700,14 @@
   justify-content: flex-start;
   padding: var(--padding-9xs) 0 0;
 }
-.off5 {
-  align-self: stretch;
-  width: 47px;
-  position: relative;
-  line-height: 100%;
-  text-transform: capitalize;
-  font-weight: 500;
-  display: inline-block;
-}
-.frame-parent1,
-.tag5 {
+
+.frame-parent1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag5 {
-  height: 24px;
-  flex: 1;
-  border-radius: var(--br-9xs);
-  background-color: var(--color-lavender);
-  border: 1px solid var(--carbon-800);
-  box-sizing: border-box;
-  padding: var(--padding-7xs) var(--padding-6xs);
-  opacity: 0;
-  white-space: nowrap;
-  font-size: var(--caption-c100-l-size);
-}
+
 .frame-parent1 {
   width: 133px;
   gap: var(--gap-3xs);
@@ -3938,7 +3802,7 @@
   white-space: nowrap;
 }
 .gallery-items5 {
-  height: 432px;
+  height: 410px;
   border-radius: var(--br-5xl);
   background-color: var(--white);
   border: 1px solid var(--carbon-200);
@@ -3984,7 +3848,6 @@
   gap: 65px;
 }
 .frame-wrapper,
-.image-2-map-parent,
 .official-merchandise-box-parent {
   display: flex;
   align-items: flex-start;
@@ -3998,11 +3861,8 @@
   box-sizing: border-box;
   min-width: 762px;
 }
-.image-2-map-parent {
-  align-self: stretch;
-  flex-direction: row;
-  justify-content: center;
-  gap: var(--gap-19xl);
+.map-parent {
+  margin-left: 20px;
 }
 .ireland-update-parent {
   align-self: stretch;
@@ -4159,25 +4019,19 @@
   letter-spacing: normal;
 }
 @media screen and (max-width: 1875px) {
-  .ireland-tweets {
+  .tweets {
     flex: 1;
   }
   .ireland-update {
     flex-wrap: wrap;
   }
-  .image-2-map {
-    flex: 1;
-  }
-  .image-2-map-parent {
-    flex-wrap: wrap;
-  }
 }
 @media screen and (max-width: 1400px) {
-  .ireland-tweets {
+  .tweets {
     flex: 1;
     min-width: 100%;
   }
-  .main-content-parent {
+  .main-content {
     max-width: 100%;
   }
   .medal-board-section {
@@ -4188,9 +4042,6 @@
   }
   .ireland-update {
     flex-wrap: wrap;
-  }
-  .image-2-map {
-    flex: 1;
   }
   .merchandise-gallery {
     flex-wrap: wrap;
@@ -4205,9 +4056,6 @@
     padding-top: 60px;
     box-sizing: border-box;
     min-width: 100%;
-  }
-  .image-2-map-parent {
-    flex-wrap: wrap;
   }
   .content-container-wrapper {
     padding-left: var(--padding-18xl);
@@ -4248,7 +4096,7 @@
   .ireland-tweet-list {
     flex-wrap: wrap;
   }
-  .team-ireland-update {
+  .official-tweets {
     padding-top: 22px;
     padding-bottom: 53px;
     box-sizing: border-box;
@@ -4268,7 +4116,7 @@
   .fan-tweet-list {
     flex-wrap: wrap;
   }
-  .ireland-tweets {
+  .tweets {
     flex: 1;
   }
   .div4,
@@ -4276,9 +4124,9 @@
   .medal-board-title,
   .medal-separator {
     font-size: var(--font-size-13xl);
-    line-height: 35px;
+    line-height: 20px;
   }
-  .main-content-parent {
+  .main-content{
     display: none;
   }
   .medal-board-title1 {
@@ -4296,9 +4144,7 @@
     flex-wrap: wrap;
     gap: var(--gap-lgi);
   }
-  .image-2-map {
-    flex: 1;
-  }
+
   .official-merchandise-title {
     font-size: var(--font-size-13xl);
     line-height: 35px;
@@ -4315,10 +4161,7 @@
     padding-top: 39px;
     box-sizing: border-box;
   }
-  .image-2-map-parent {
-    flex-wrap: wrap;
-    gap: var(--gap-lgi);
-  }
+
   .content-container {
     gap: var(--gap-10xl);
   }
@@ -4359,7 +4202,7 @@
   .ireland-tweet-list {
     gap: var(--gap-7xl);
   }
-  .team-ireland-update {
+  .official-tweets {
     gap: var(--gap-2xl);
   }
   .fan-updates1 {
@@ -4393,7 +4236,7 @@
     padding-bottom: var(--padding-21xl);
     box-sizing: border-box;
   }
-  .ireland-tweets {
+  .tweets {
     flex: 1;
     gap: var(--gap-xl);
   }
@@ -4410,12 +4253,12 @@
   .gold-count,
   .medal-separator {
     font-size: var(--subheading-size);
-    line-height: 26px;
+    line-height: 20px;
   }
   .medals {
     flex-wrap: wrap;
   }
-  .main-content-parent {
+  .main-content {
     gap: var(--gap-10xl);
   }
   .medal-board-title1 {
@@ -4435,9 +4278,6 @@
   }
   .ireland-update {
     flex-wrap: wrap;
-  }
-  .image-2-map {
-    flex: 1;
   }
   .official-merchandise-title {
     font-size: var(--subheading-size);
@@ -4463,9 +4303,6 @@
   .team-france-hoodie {
     font-size: var(--label-l100-b-size);
     line-height: 16px;
-  }
-  .image-2-map-parent {
-    flex-wrap: wrap;
   }
   .copyright-2024-all,
   .olympics-fan-zone {
@@ -4615,3 +4452,67 @@
   max-width: 90%;
   max-height: 90%;
 }
+
+
+/* COUNT DOWN */
+.countdown-wrapper {
+  text-align: center;
+  flex:1;
+  background: #fff;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+  font-size: 20px;
+  color: #333;
+}
+
+.countdown span {
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+/* SLIDESHOWS */
+.slideshow-container {
+  position: relative;
+  max-width: 1080px; /* Set your desired width */
+  max-height: 500px;
+  margin: 0 auto; /* Center the slideshow container */
+  overflow: hidden;
+  
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%; /* Ensure the images fill the width of the slideshow container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation button styles */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
