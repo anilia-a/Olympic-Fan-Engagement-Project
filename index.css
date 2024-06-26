@@ -2366,6 +2366,7 @@
   text-overflow: ellipsis;
   white-space: normal;
   flex-shrink: 0;
+  text-align: left;
 }
 .item-title {
   align-self: stretch;
@@ -2524,11 +2525,7 @@
   gap: var(--gap-7xs);
   white-space: nowrap;
 }
-.button-primary-green1:hover,
-.button-primary-green2:hover,
-.button-primary-green3:hover,
-.button-primary-green4:hover,
-.button-primary-green5:hover,
+
 .button-primary-green:hover {
   background-color: var(--color-mediumseagreen-100);
   border: 1px solid var(--color-mediumseagreen-100);
@@ -2914,6 +2911,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
 }
 .paris-2024-olympics-le-coq-spo-wrapper {
   align-self: stretch;
@@ -3155,6 +3153,7 @@
   text-overflow: ellipsis;
   white-space: normal;
   flex-shrink: 0;
+  text-align:left;
 }
 .jewellery-parent {
   align-self: stretch;
@@ -3417,6 +3416,7 @@
   overflow: visible;
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
 }
 .backpack-price-shipping {
   align-self: stretch;
@@ -3661,6 +3661,7 @@
   text-overflow: ellipsis;
   white-space: normal;
   flex-shrink: 0;
+  text-align: left;
 }
 .backpack-parent {
   align-self: stretch;

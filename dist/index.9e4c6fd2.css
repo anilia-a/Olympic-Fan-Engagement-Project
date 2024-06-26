@@ -2531,6 +2531,7 @@
   color: var(--carbon-500);
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
   flex-shrink: 0;
   height: 41px;
   line-height: 130%;
@@ -2710,7 +2711,7 @@
   flex-direction: row;
 }
 
-.button-primary-green1:hover, .button-primary-green2:hover, .button-primary-green3:hover, .button-primary-green4:hover, .button-primary-green5:hover, .button-primary-green:hover {
+.button-primary-green:hover {
   background-color: var(--color-mediumseagreen-100);
   border: 1px solid var(--color-mediumseagreen-100);
   box-sizing: border-box;
@@ -3124,6 +3125,7 @@
   color: inherit;
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
   flex: 1;
   height: 41px;
   line-height: 130%;
@@ -3389,6 +3391,7 @@
   color: var(--carbon-500);
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
   flex-shrink: 0;
   height: 41px;
   line-height: 130%;
@@ -3673,6 +3676,7 @@
   color: inherit;
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
   flex: 1;
   height: 41px;
   line-height: 130%;
@@ -3940,6 +3944,7 @@
   color: var(--carbon-500);
   text-overflow: ellipsis;
   white-space: normal;
+  text-align: left;
   flex-shrink: 0;
   height: 41px;
   line-height: 130%;
