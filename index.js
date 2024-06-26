@@ -85,3 +85,44 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const apiKey = '51a61ec0535f4e1ca16042d07f528167'; // Replace with your NewsAPI key
+    const url = `https://newsapi.org/v2/everything?q=IrelandOROlympicsORParis&language=en&sortBy=publishedAt&pageSize=10&apiKey=${apiKey}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const articles = data.articles;
+            const headlinesContainer = document.getElementById('news-headlines');
+
+            articles.forEach(article => {
+                const headlineElement = document.createElement('div');
+                headlineElement.className = 'news-headline';
+
+                let image = '';
+                if (article.urlToImage) {
+                    image = `<img src="${article.urlToImage}" alt="${article.title}" class="news-image">`;
+                }
+
+                headlineElement.innerHTML = `
+                    <a href="${article.url}" target="_blank">
+                        ${image}
+                        <h3>${article.title}</h3>
+                    </a>
+                `;
+                headlinesContainer.appendChild(headlineElement);
+            });
+
+            // Adjust height of headlinesContainer if necessary (not usually needed)
+            // headlinesContainer.style.height = '100%'; 
+
+        })
+        .catch(error => {
+            console.error('Error fetching the news:', error);
+        });
+});
+
+
+
+
