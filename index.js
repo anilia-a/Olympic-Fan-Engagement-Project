@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = '51a61ec0535f4e1ca16042d07f528167'; // Replace with your NewsAPI key
-    const url = `https://newsapi.org/v2/everything?q=IrelandOROlympicsORParis&language=en&sortBy=publishedAt&pageSize=10&apiKey=${apiKey}`;
+    const url = `https://newsapi.org/v2/everything?q=Ireland+Olympics&language=en&sortBy=publishedAt&pageSize=10&apiKey=${apiKey}`;
 
     fetch(url)
         .then(response => response.json())
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 headlineElement.innerHTML = `
                     <a href="${article.url}" target="_blank">
                         ${image}
-                        <h3>${article.title}</h3>
+                        <p>${article.title}</p>
                     </a>
                 `;
                 headlinesContainer.appendChild(headlineElement);
@@ -122,7 +122,3 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error fetching the news:', error);
         });
 });
-
-
-
-

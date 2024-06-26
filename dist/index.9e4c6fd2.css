@@ -4831,6 +4831,10 @@
   overflow-y: auto;
 }
 
+.news-container-title {
+  font-size: 25px;
+}
+
 .news-headline {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;

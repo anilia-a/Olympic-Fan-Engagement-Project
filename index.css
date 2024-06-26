@@ -5063,6 +5063,9 @@
   background-color: #f0f0f0;
   overflow-y: auto;
 }
+.news-container-title{
+  font-size: 25px;
+}
 
 .news-headline {
   margin-bottom: 20px;
@@ -5075,6 +5078,7 @@
   display: block;
   text-decoration: none;
   color: #333;
+
 }
 
 .news-image {
