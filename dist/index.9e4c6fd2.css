@@ -4107,6 +4107,7 @@ html {
 
 .copyright-2024-all {
   max-width: 100%;
+  margin-left: 130px;
   line-height: 150%;
   display: inline-block;
   position: relative;
@@ -4736,5 +4737,14 @@ html {
   height: auto;
   margin-bottom: 10px;
   display: block;
+}
+
+.bottom-right-logos img {
+  gap: 30px;
+  width: 25px;
+  height: auto;
+  margin-top: -38px;
+  margin-left: 197px;
+  display: flex;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

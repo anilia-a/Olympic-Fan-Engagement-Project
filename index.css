@@ -4297,6 +4297,7 @@ html {
   line-height: 150%;
   display: inline-block;
   max-width: 100%;
+  margin-left: 130px;
 }
 
 .footer-content,
@@ -4959,3 +4960,17 @@ html {
   margin-bottom: 10px;
   /* Adds some space below the image */
 }
+
+ 
+  
+ 
+ .bottom-right-logos img {
+ 
+  width: 25px;  /* Adjust the size as needed */
+  margin-left: 197px;
+  margin-top: -38px;
+  height: auto;
+  display: flex;
+  gap: 30px;
+ 
+ }

@@ -1,3 +1,7 @@
+//RELOAD HOME PAGE
+document.getElementById("home-button").addEventListener("click", function() {
+    location.reload();
+});
 // SUBSCRIBE TO NEWSLETTER FUNCTIONALITY
 var headerContainer = document.getElementById("headerContainer");
 if (headerContainer) headerContainer.addEventListener("click", function() {
