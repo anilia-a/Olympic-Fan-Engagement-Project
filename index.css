@@ -2390,7 +2390,7 @@ html {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
-  gap: var(--gap-22xl);
+  row-gap: 20px;
   min-width: 762px;
   text-align: center;
 }
@@ -4166,6 +4166,7 @@ html {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
+  margin-top: 15px;
 }
 
 .frame-wrapper {
@@ -4184,7 +4185,7 @@ html {
   align-self: stretch;
   flex-direction: column;
   align-items: flex-start;
-  gap: 19.3px;
+  gap: 30px;
   text-align: left;
   font-size: var(--heading-size);
 }
@@ -4201,7 +4202,7 @@ html {
   flex: 1;
   flex-direction: column;
   align-items: flex-end;
-  gap: 59px;
+  gap: 10px;
   text-align: center;
   font-size: var(--title-size);
   color: var(--color-black);
@@ -4522,10 +4523,6 @@ html {
   .frame-wrapper {
     padding-top: 39px;
     box-sizing: border-box;
-  }
-
-  .content-container {
-    gap: var(--gap-10xl);
   }
 
   .navigation-footer {

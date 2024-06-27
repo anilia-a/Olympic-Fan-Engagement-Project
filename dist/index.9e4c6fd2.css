@@ -2284,11 +2284,11 @@ html {
 }
 
 .medals-and-merchandise {
-  justify-content: flex-start;
-  gap: var(--gap-22xl);
   text-align: center;
   flex-direction: column;
   flex: 1;
+  justify-content: flex-start;
+  row-gap: 20px;
   min-width: 762px;
 }
 
@@ -3985,6 +3985,7 @@ html {
 .frame-wrapper, .official-merchandise-box-parent {
   align-items: flex-start;
   max-width: 100%;
+  margin-top: 15px;
   display: flex;
 }
 
@@ -4006,7 +4007,7 @@ html {
   flex-direction: column;
   align-self: stretch;
   align-items: flex-start;
-  gap: 19.3px;
+  gap: 30px;
 }
 
 .content-container, .content-container-wrapper, .ireland-update-parent {
@@ -4023,7 +4024,7 @@ html {
   flex-direction: column;
   flex: 1;
   align-items: flex-end;
-  gap: 59px;
+  gap: 10px;
 }
 
 .content-container-wrapper {
@@ -4329,10 +4330,6 @@ html {
   .frame-wrapper {
     box-sizing: border-box;
     padding-top: 39px;
-  }
-
-  .content-container {
-    gap: var(--gap-10xl);
   }
 
   .navigation-footer {
