@@ -1050,176 +1050,75 @@ html {
   display: flex;
 }
 
-.medal-counts, .medal-counts1 {
-  border-radius: var(--br-12xl);
-  background-color: var(--color-darkkhaki);
-  width: 130px;
-  height: 248px;
-  bottom: -130px;
-}
-
-.medal-counts {
-  position: absolute;
-  left: -15px;
-  margin: 0 !important;
-}
-
-.medal-counts1 {
-  right: -15px;
-}
-
-.mask-group-icon, .medal-counts1, .medal-counts2 {
-  position: absolute;
-  margin: 0 !important;
-}
-
-.medal-counts2 {
-  border-radius: var(--br-12xl);
-  background-color: var(--color-darkkhaki);
-  width: 130px;
-  height: 248px;
-  bottom: -80px;
-  left: calc(50% - 65px);
-}
-
 .mask-group-icon {
   object-fit: contain;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  inset: 0;
+  width: 100px;
+  height: 97.69px;
+  position: absolute;
   overflow: hidden;
+  margin: 0 !important;
 }
 
 .p {
   margin: 0;
 }
 
-.medal-separator {
-  z-index: 1;
-  font-weight: 500;
-  line-height: 20px;
-  position: relative;
-}
-
-.bronze-medal {
-  padding: var(--padding-34xl-1) var(--padding-17xl) var(--padding-5xl-6);
-  box-sizing: border-box;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100px;
-  display: flex;
-  position: relative;
-}
-
 .mask-group-icon1 {
   object-fit: contain;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  margin: 0 !important;
-}
-
-.gold-count {
-  z-index: 1;
-  min-width: 29px;
-  font-weight: 500;
-  line-height: 20px;
-  display: inline-block;
-  position: relative;
-}
-
-.gold-medal, .gold-medal-wrapper {
-  justify-content: flex-start;
-  align-items: flex-start;
-  display: flex;
-}
-
-.gold-medal {
-  padding: var(--padding-34xl-1) var(--padding-15xl) var(--padding-5xl-6) var(--padding-16xl);
-  flex-direction: row;
-  align-self: stretch;
-  position: relative;
-}
-
-.gold-medal-wrapper {
-  flex-direction: column;
   width: 100px;
-  height: 162px;
+  height: 97.69px;
+  position: absolute;
+  overflow: hidden;
 }
 
 .mask-group-icon2 {
   object-fit: contain;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  margin: -15px;
-  position: absolute;
-  inset: 0;
-}
-
-.div4 {
-  z-index: 1;
-  min-width: 27px;
-  font-weight: 0;
-  line-height: 30.3px;
-  display: inline-block;
-  position: relative;
-}
-
-.silver-medal {
-  padding: 54px var(--padding-17xl) 23.7px;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  display: flex;
-  position: relative;
-}
-
-.medals, .medals-container1 {
-  flex-direction: row;
-  flex: 1;
-  max-width: 100%;
+  width: 100px;
+  height: 97.69px;
 }
 
 .medals {
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: var(--gap-xl);
-  z-index: 1;
+  align-items: center;
+  gap: 20px;
   display: flex;
 }
 
-.medals-container1 {
-  position: relative;
-}
-
-.main-content, .medals-container, .medals-container1 {
+.main-content {
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
 }
 
 .medals-container {
-  padding: 0 var(--padding-mini);
   box-sizing: border-box;
   flex-direction: row;
-  width: 416px;
-  max-width: 100%;
-  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.medal {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.medal-icon {
+  width: 130px;
+  height: auto;
+}
+
+.medal-count {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 30px;
 }
 
 .main-content {
   flex-direction: column;
   flex-shrink: 0;
-  gap: 30px;
+  gap: 25px;
   width: 437px;
   max-width: calc(100% - 746px);
 }
@@ -4261,7 +4160,7 @@ html {
   letter-spacing: normal;
   align-items: flex-start;
   width: 100%;
-  padding: 52px 0 0;
+  padding: 25px 0 0;
   line-height: normal;
   position: relative;
 }
@@ -4387,11 +4286,6 @@ html {
 
   .tweets {
     flex: 1;
-  }
-
-  .div4, .gold-count, .medal-board-title, .medal-separator {
-    font-size: var(--font-size-13xl);
-    line-height: 20px;
   }
 
   .main-content {
@@ -4536,24 +4430,12 @@ html {
     flex: 1;
   }
 
-  .medal-board-title {
-    font-size: var(--subheading-size);
-    line-height: 26px;
-  }
-
   .medal-title-container {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
     box-sizing: border-box;
-  }
-
-  .div4, .gold-count, .medal-separator {
-    font-size: var(--subheading-size);
-    line-height: 20px;
-  }
-
-  .medals {
-    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .main-content {
