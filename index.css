@@ -1,6 +1,13 @@
 html {
   scroll-behavior: smooth;
 }
+.ireland-at-paris-logo {
+  width: 55px;
+  margin-top: -4px;
+  height: auto;
+  position: relative;
+  margin-left: 58px;
+}
 
 .image-1-icon {
   height: 235px;
@@ -18,8 +25,9 @@ html {
 }
 
 .ireland-paris {
-  margin: 0;
   font-size: inherit;
+  margin-top: -3px;
+  margin-left: -440px;
   letter-spacing: 0.05em;
   line-height: 150%;
   font-weight: 700;
@@ -597,28 +605,21 @@ html {
   gap: var(--gap-xl);
 }
 
-.more-icon {
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  margin: 0 !important;
-  right: -11px;
-  bottom: -22px;
-  border-radius: 50%;
-  background-color: var(--color-yellowgreen-200);
-  z-index: 1;
-}
-
 .more-label {
-  margin: 0;
-  flex: 1;
-  position: relative;
-  font-size: inherit;
-  line-height: 8px;
-  font-weight: 100;
-  font-family: inherit;
-  white-space: nowrap;
-  z-index: 2;
+  background-color: #86BC25;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.more-label:hover {
+  background-color: grey;
 }
 
 .ireland-tweet-list-inner,
@@ -978,17 +979,24 @@ html {
   gap: 22px;
 }
 
-.fan-more-icon {
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  margin: 0 !important;
-  right: -11px;
-  bottom: -22px;
-  border-radius: 50%;
-  background-color: var(--color-yellowgreen-200);
-  z-index: 1;
+.fan-more-button {
+  background-color: #86BC25;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
+
+.fan-more-button:hover {
+  background-color: grey;
+}
+
 
 .fan-more-label {
   margin: 0;
@@ -1143,8 +1151,7 @@ html {
   gap: 20px;
 }
 
-.main-content
-{
+.main-content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1157,6 +1164,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .medal {
   display: flex;
   flex-direction: column;
@@ -1165,13 +1173,15 @@ html {
 }
 
 .medal-icon {
-  width: 130px; /* Adjust the size as needed */
+  width: 130px;
+  /* Adjust the size as needed */
   height: auto;
 }
 
 .medal-count {
   margin-top: 5px;
-  font-size: 30px; /* Adjust the font size as needed */
+  font-size: 30px;
+  /* Adjust the font size as needed */
   text-align: center;
 }
 
@@ -4482,7 +4492,7 @@ html {
   .tweets {
     flex: 1;
   }
-  
+
   .main-content {
     display: none;
   }
@@ -4932,7 +4942,8 @@ html {
   background-color: #f0f0f0;
   overflow-y: auto;
 }
-.news-container-title{
+
+.news-container-title {
   font-size: 25px;
 }
 
@@ -4961,12 +4972,11 @@ html {
   /* Adds some space below the image */
 }
 
- 
-  
- 
- .bottom-right-logos img {
- 
-  width: 25px;  /* Adjust the size as needed */
+
+.bottom-right-logos img {
+
+  width: 25px;
+  /* Adjust the size as needed */
   margin-left: 197px;
   margin-top: -38px;
   height: auto;
@@ -4974,78 +4984,3 @@ html {
   gap: 30px;
  
  }
- #message-box {
-    width: 50%;
-    margin: var(--gap-xl) 0; /* Remove auto to align to the left */
-}
-
-#post-message-form {
-    display: flex;
-    flex-direction: column;
-}
-
-#message-input {
-    width: 100%; /* Make input field take full width of the form */
-    height: 50px;
-    margin-bottom: var(--gap-xs);
-    padding: var(--padding-xs);
-    font-size: var(--font-size-lg);
-    font-family: var(--body-styles-body-01);
-    border: 1px solid var(--carbon-200);
-    border-radius: var(--br-8xs);
-    background-color: var(--white);
-}
-
-#post-message-form button {
-    width: 100%; /* Make button take full width of the form */
-    padding: var(--padding-xs);
-    font-size: var(--font-size-lgi);
-    font-family: var(--body-styles-body-01);
-    background-color: var(--color-yellowgreen-100);
-    color: var(--white);
-    border: none;
-    border-radius: var(--br-8xs);
-    cursor: pointer;
-    box-shadow: var(--button-shadow);
-}
-
-#post-message-form button:hover {
-    background-color: var(--color-yellowgreen-200);
-}
-
-#messages-container {
-    width: 100%; /* Make message container take full width of the box */
-    max-height: 200px; /* Adjust height as needed */
-    overflow-y: auto;
-    border: 1px solid var(--carbon-200);
-    padding: var(--padding-xs);
-    margin-bottom: var(--gap-xs);
-    background-color: var(--color-lavender);
-    border-radius: var(--br-8xs);
-}
-
-#messages-list {
-    display: flex;
-    flex-direction: column; /* Default column direction */
-}
-
-.message {
-    width: 100%; /* Make messages take full width of the container */
-    margin: var(--gap-5xs) 0;
-    padding: var(--padding-xs);
-    border: 1px solid var(--carbon-200);
-    border-radius: var(--br-8xs);
-    background-color: var(--white);
-    font-size: var(--font-size-lgi);
-    font-family: var(--body-styles-body-01);
-    color: var(--text-text-primary);
-    position: relative;
-}
-
-.timestamp {
-    font-size: var(--caption-c100-l-size);
-    color: var(--carbon-500);
-    position: absolute;
-    top: var(--gap-10xs);
-    right: var(--gap-10xs);
-}
