@@ -1,6 +1,13 @@
 html {
   scroll-behavior: smooth;
 }
+.ireland-at-paris-logo {
+  width: 55px;
+  margin-top: -4px;
+  height: auto;
+  position: relative;
+  margin-left: 58px;
+}
 
 .image-1-icon {
   height: 235px;
@@ -18,8 +25,9 @@ html {
 }
 
 .ireland-paris {
-  margin: 0;
   font-size: inherit;
+  margin-top: -3px;
+  margin-left: -440px;
   letter-spacing: 0.05em;
   line-height: 150%;
   font-weight: 700;
@@ -1143,8 +1151,7 @@ html {
   gap: 20px;
 }
 
-.main-content
-{
+.main-content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1157,6 +1164,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .medal {
   display: flex;
   flex-direction: column;
@@ -1165,13 +1173,15 @@ html {
 }
 
 .medal-icon {
-  width: 130px; /* Adjust the size as needed */
+  width: 130px;
+  /* Adjust the size as needed */
   height: auto;
 }
 
 .medal-count {
   margin-top: 5px;
-  font-size: 30px; /* Adjust the font size as needed */
+  font-size: 30px;
+  /* Adjust the font size as needed */
   text-align: center;
 }
 
@@ -4482,7 +4492,7 @@ html {
   .tweets {
     flex: 1;
   }
-  
+
   .main-content {
     display: none;
   }
@@ -4932,7 +4942,8 @@ html {
   background-color: #f0f0f0;
   overflow-y: auto;
 }
-.news-container-title{
+
+.news-container-title {
   font-size: 25px;
 }
 
@@ -4961,16 +4972,15 @@ html {
   /* Adds some space below the image */
 }
 
- 
-  
- 
- .bottom-right-logos img {
- 
-  width: 25px;  /* Adjust the size as needed */
+
+.bottom-right-logos img {
+
+  width: 25px;
+  /* Adjust the size as needed */
   margin-left: 197px;
   margin-top: -38px;
   height: auto;
   display: flex;
   gap: 30px;
- 
- }
+
+}

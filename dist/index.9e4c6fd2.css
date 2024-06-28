@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.ireland-at-paris-logo {
+  width: 55px;
+  height: auto;
+  margin-top: -4px;
+  margin-left: 58px;
+  position: relative;
+}
+
 .image-1-icon {
   z-index: 1;
   width: 210px;
@@ -19,7 +27,8 @@ html {
 .ireland-paris {
   font-size: inherit;
   letter-spacing: .05em;
-  margin: 0;
+  margin-top: -3px;
+  margin-left: -440px;
   font-family: inherit;
   font-weight: 700;
   line-height: 150%;
