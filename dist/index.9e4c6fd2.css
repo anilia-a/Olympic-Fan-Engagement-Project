@@ -576,28 +576,22 @@ html {
   gap: var(--gap-xl);
 }
 
-.more-icon {
-  background-color: var(--color-yellowgreen-200);
-  z-index: 1;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  bottom: -22px;
-  right: -11px;
-  margin: 0 !important;
+.more-label {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #86bc25;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.more-label {
-  font-size: inherit;
-  white-space: nowrap;
-  z-index: 2;
-  flex: 1;
-  margin: 0;
-  font-family: inherit;
-  font-weight: 100;
-  line-height: 8px;
-  position: relative;
+.more-label:hover {
+  background-color: gray;
 }
 
 .ireland-tweet-list-inner, .more-icon-parent {
@@ -936,16 +930,22 @@ html {
   gap: 22px;
 }
 
-.fan-more-icon {
-  background-color: var(--color-yellowgreen-200);
-  z-index: 1;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  bottom: -22px;
-  right: -11px;
-  margin: 0 !important;
+.fan-more-button {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #86bc25;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.fan-more-button:hover {
+  background-color: gray;
 }
 
 .fan-more-label {
