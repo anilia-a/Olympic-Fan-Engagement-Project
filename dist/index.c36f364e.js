@@ -87,5 +87,28 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Error fetching the news:", error);
     });
 });
+document.addEventListener("DOMContentLoaded", ()=>{
+    const form = document.getElementById("post-message-form");
+    const messageInput = document.getElementById("message-input");
+    const messagesList = document.getElementById("messages-list");
+    form.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        const messageText = messageInput.value.trim();
+        if (messageText) {
+            addMessage(messageText);
+            messageInput.value = "";
+        }
+    });
+    function addMessage(text) {
+        const message = document.createElement("div");
+        message.classList.add("message");
+        const timestamp = document.createElement("span");
+        timestamp.classList.add("timestamp");
+        timestamp.textContent = new Date().toLocaleString();
+        message.textContent = text;
+        message.appendChild(timestamp);
+        messagesList.insertBefore(message, messagesList.firstChild);
+    }
+});
 
 //# sourceMappingURL=index.c36f364e.js.map
