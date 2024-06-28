@@ -4984,3 +4984,79 @@ html {
   gap: 30px;
  
  }
+
+ #message-box {
+  width: 50%;
+  margin: var(--gap-xl) 0; /* Remove auto to align to the left */
+}
+
+#post-message-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#message-input {
+  width: 100%; /* Make input field take full width of the form */
+  height: 50px;
+  margin-bottom: var(--gap-xs);
+  padding: var(--padding-xs);
+  font-size: var(--font-size-lg);
+  font-family: var(--body-styles-body-01);
+  border: 1px solid var(--carbon-200);
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+}
+
+#post-message-form button {
+  width: 100%; /* Make button take full width of the form */
+  padding: var(--padding-xs);
+  font-size: var(--font-size-lgi);
+  font-family: var(--body-styles-body-01);
+  background-color: var(--color-yellowgreen-100);
+  color: var(--white);
+  border: none;
+  border-radius: var(--br-8xs);
+  cursor: pointer;
+  box-shadow: var(--button-shadow);
+}
+
+#post-message-form button:hover {
+  background-color: var(--color-yellowgreen-200);
+}
+
+#messages-container {
+  width: 100%; /* Make message container take full width of the box */
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;
+  border: 1px solid var(--carbon-200);
+  padding: var(--padding-xs);
+  margin-bottom: var(--gap-xs);
+  background-color: var(--color-lavender);
+  border-radius: var(--br-8xs);
+}
+
+#messages-list {
+  display: flex;
+  flex-direction: column; /* Default column direction */
+}
+
+.message {
+  width: 100%; /* Make messages take full width of the container */
+  margin: var(--gap-5xs) 0;
+  padding: var(--padding-xs);
+  border: 1px solid var(--carbon-200);
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+  font-size: var(--font-size-lgi);
+  font-family: var(--body-styles-body-01);
+  color: var(--text-text-primary);
+  position: relative;
+}
+
+.timestamp {
+  font-size: var(--caption-c100-l-size);
+  color: var(--carbon-500);
+  position: absolute;
+  top: var(--gap-10xs);
+  right: var(--gap-10xs);
+}
